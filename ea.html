@@ -8,15 +8,23 @@
       <a href="tel:+12082701572">(208) 270-1572</a>
     </div>
     <!-- Start of ChatBot (www.chatbot.com) code -->
-<script type="text/javascript">
-    window.__be = window.__be || {};
-    window.__be.id = "60a6a96cab283600078b2770";
-    (function() {
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "60a6a96cab283600078b2770";
+  
+      var BE_API = window.BE_API || {};
+
+      // open chat widget window after load
+      BE_API.onLoad = function () {
+        BE_API.openChatWindow();
+      };
+      
+      (function() {
         var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
         be.src = 'https://cdn.chatbot.com/widget/plugin.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-    })();
-</script>
-<!-- End of ChatBot code -->
+      })();
+    </script>
+    <!-- End of ChatBot code -->
   </body>
 </html>
